@@ -1,0 +1,30 @@
+GET http://localhost:2000/subscribers
+
+###
+
+GET http://localhost:2000/subscribers/63235f00c18b3ac33e4b3a7e
+
+###
+
+POST http://localhost:2000/subscribers
+Content-Type: application/json 
+
+{
+    "name": "Amazing",
+    "subscribedToChannel": "My Channel"
+}
+
+###
+
+DELETE http://localhost:2000/subscribers/63235de1d4d86d92e591aadd
+
+
+###
+
+PATCH http://localhost:2000/subscribers/63235f00c18b3ac33e4b3a7e
+Content-Type: application/json
+
+{
+    "name":"New Name"
+}
+
